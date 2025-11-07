@@ -1,0 +1,16 @@
+export const palette = {
+  background: '#050315',
+  surface: '#0D0B2D',
+  card: '#14113F',
+  cardHighlight: '#1F1B55',
+  accent: '#6366F1',
+  accentSecondary: '#EC4899',
+  success: '#10B981',
+  warning: '#F59E0B',
+  error: '#F87171',
+  textPrimary: '#F9FAFB',
+  textSecondary: '#D1D5DB',
+  textMuted: '#9CA3AF',
+  border: 'rgba(99, 102, 241, 0.2)',
+  chipBackground: 'rgba(99, 102, 241, 0.12)',
+};

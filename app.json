@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "PulseCast",
+    "slug": "pulsecast",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D0B2D"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D0B2D"
+      },
+      "package": "com.example.pulsecast",
+      "permissions": ["READ_CONTACTS", "SEND_SMS"],
+      "blockedPermissions": []
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      ["expo-sms"],
+      ["expo-linear-gradient"],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 24
+          }
+        }
+      ]
+    ]
+  }
+}
