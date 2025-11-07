@@ -100,7 +100,23 @@ src/
   screens/             # Screen containers (Compose)
   theme/               # Palette and typography tokens
   utils/               # Helpers for validation and SMS segment estimates
+web-previews/          # High-fidelity static renders used for documentation screenshots
 ```
+
+## Capturing UI screenshots without Expo
+
+If you need PulseCast visuals but do not have native build tooling handy, open the static previews included in
+`web-previews/`. Each HTML file mirrors a key experience (default compose view, scheduling modal, template library, success
+hand-off, and error recovery). Serve the folder locally – for example:
+
+```bash
+cd web-previews
+python3 -m http.server 3000
+```
+
+Then browse to `http://localhost:3000/compose-default.html` (and the other HTML files) to capture pixel-perfect screenshots
+that match the React Native styling guidance. These previews are handcrafted to reflect the gradients, chip treatments, and
+status banners from the Compose screen so designers, stakeholders, and QA can review without installing Expo.
 
 ## Roadmap ideas
 

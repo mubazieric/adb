@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseCast Compose – Error State</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <div class="scroll-container">
+        <header class="hero">
+          <h1>Something went wrong</h1>
+          <p>Review the status below, adjust your recipients, and attempt the send again.</p>
+        </header>
+
+        <div class="status-banner error">Unexpected error while trying to send your SMS.</div>
+
+        <section class="section-card">
+          <p class="section-title">Recipients</p>
+          <div class="recipient-input">
+            <input type="text" value="Add name or phone" />
+            <button>Bulk import</button>
+          </div>
+          <div class="recipient-chips">
+            <span class="chip">Engineering Leads <span class="remove">✕</span></span>
+            <span class="chip invalid">Missing number <span class="remove">✕</span></span>
+          </div>
+        </section>
+
+        <section class="section-card message-area">
+          <p class="section-title">Message</p>
+          <textarea>Morning! We hit a blocker deploying 1.7.3. Check the deploy channel for fix-forward steps.</textarea>
+          <div class="toolbar">
+            <button>Schedule delivery</button>
+            <button class="clear">Clear recipients</button>
+          </div>
+        </section>
+
+        <section class="preview-card">
+          <div class="preview-meta">
+            <span>Preview • 1 valid recipient</span>
+            <span>129 characters</span>
+          </div>
+          <p class="preview-body">
+            Morning! We hit a blocker deploying 1.7.3. Check the deploy channel for fix-forward steps.
+          </p>
+        </section>
+
+        <button class="send-button">Retry send</button>
+
+        <aside class="disclaimer">
+          <h4>Troubleshooting</h4>
+          <p>Confirm SMS capability in Expo Go or on-device before retrying.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

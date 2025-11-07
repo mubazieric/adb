@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseCast Compose – Scheduling</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <div class="scroll-container">
+        <header class="hero">
+          <h1>PulseCast Broadcasts</h1>
+          <p>Confirm your delivery timing before handing off the message to Android.</p>
+        </header>
+
+        <section class="section-card">
+          <p class="section-title">Recipients</p>
+          <div class="recipient-chips">
+            <span class="chip">Jordan • +1 (415) 555-0189 <span class="remove">✕</span></span>
+            <span class="chip">Design Team <span class="remove">✕</span></span>
+            <span class="chip">Ops Squad <span class="remove">✕</span></span>
+            <span class="chip invalid">Invalid number <span class="remove">✕</span></span>
+          </div>
+          <div class="badge alert">2 recipients cleaned automatically</div>
+        </section>
+
+        <section class="section-card message-area">
+          <p class="section-title">Message</p>
+          <textarea>Heads-up: we&apos;re shipping build 128 to QA at 3PM. Ping if you need a smoke checklist.</textarea>
+          <div class="toolbar">
+            <button>Scheduled: Apr 21 • 3:00 PM</button>
+            <button class="clear">Clear recipients</button>
+          </div>
+        </section>
+
+        <section class="preview-card">
+          <div class="preview-meta">
+            <span>Preview • 3 valid recipients</span>
+            <span>117 characters</span>
+          </div>
+          <p class="preview-body">
+            Heads-up: we&apos;re shipping build 128 to QA at 3PM. Ping if you need a smoke checklist.
+          </p>
+        </section>
+
+        <button class="send-button disabled">Send SMS</button>
+        <div class="status-banner info">Add at least one valid recipient before sending.</div>
+
+        <aside class="disclaimer">
+          <h4>Scheduling reminders</h4>
+          <p>PuslseCast surfaces a local reminder at the scheduled time so you can confirm delivery.</p>
+        </aside>
+      </div>
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2>Schedule delivery</h2>
+        <form>
+          <label> Date <input type="date" value="2024-04-21" /> </label>
+          <label> Time <input type="time" value="15:00" /> </label>
+          <label>
+            Reminder
+            <select>
+              <option>15 minutes before</option>
+              <option selected>At scheduled time</option>
+              <option>Custom</option>
+            </select>
+          </label>
+        </form>
+        <div class="modal-actions">
+          <button class="secondary">Cancel</button>
+          <button class="primary">Save schedule</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
