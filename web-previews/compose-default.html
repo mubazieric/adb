@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseCast Compose – Default</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <div class="scroll-container">
+        <header class="hero">
+          <h1>PulseCast Broadcasts</h1>
+          <p>
+            Send beautifully crafted updates to your community in seconds. Import contacts, personalize your copy, and
+            launch.
+          </p>
+        </header>
+
+        <section class="section-card">
+          <p class="section-title">Recipients</p>
+          <div class="recipient-input">
+            <input type="text" value="Add name or phone" />
+            <button>Add</button>
+          </div>
+          <div class="recipient-chips">
+            <span class="chip">Jordan • +1 (415) 555-0189 <span class="remove">✕</span></span>
+            <span class="chip">Design Team <span class="remove">✕</span></span>
+            <span class="chip">Ops Squad <span class="remove">✕</span></span>
+          </div>
+        </section>
+
+        <section class="section-card message-area">
+          <p class="section-title">Message</p>
+          <textarea placeholder="Draft your announcement...">Hey team! Tomorrow&apos;s sync moves to 10:30am so we can welcome our new hires. Coffee and pastries on me ☕️</textarea>
+          <div class="toolbar">
+            <button>Schedule delivery</button>
+            <button class="clear">Clear recipients</button>
+          </div>
+        </section>
+
+        <section>
+          <p class="section-title">Templates</p>
+          <div class="templates">
+            <article class="template-card active">
+              <h3>Daily stand-up reminder</h3>
+              <p>Quick heads-up about the stand-up time or Zoom room for the day.</p>
+            </article>
+            <article class="template-card">
+              <h3>Product launch teaser</h3>
+              <p>Generate excitement with a short teaser and link to the landing page.</p>
+            </article>
+            <article class="template-card">
+              <h3>Event RSVP follow-up</h3>
+              <p>Prompt responses from attendees with a warm reminder and countdown.</p>
+            </article>
+          </div>
+          <p class="template-footnote">Tap any template to drop it into the composer and iterate from there.</p>
+        </section>
+
+        <section class="preview-card">
+          <div class="preview-meta">
+            <span>Preview • 3 recipients</span>
+            <span>143 characters</span>
+          </div>
+          <p class="preview-body">
+            Hey team! Tomorrow&apos;s sync moves to 10:30am so we can welcome our new hires. Coffee and pastries on me ☕️
+          </p>
+        </section>
+
+        <button class="send-button">Send SMS</button>
+
+        <aside class="disclaimer">
+          <h4>Production ready guidance</h4>
+          <p>Request the SEND_SMS permission and test on Android to confirm the composer hand-off.</p>
+          <p class="footer-hint">SMS is previewed here. Sending requires an Android device or emulator.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
