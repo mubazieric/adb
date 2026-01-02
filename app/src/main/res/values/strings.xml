@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DropDroid</string>
+    <string name="receiving_on">Receiving: On</string>
+    <string name="receiving_off">Receiving: Off</string>
+    <string name="nearby_devices">Nearby devices</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+</resources>
