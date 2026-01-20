@@ -1,0 +1,41 @@
+[versions]
+androidGradlePlugin = "8.5.2"
+kotlin = "1.9.24"
+composeBom = "2024.06.00"
+activityCompose = "1.9.0"
+coreKtx = "1.13.1"
+material3 = "1.2.1"
+navCompose = "2.7.7"
+coil = "2.6.0"
+serialization = "1.6.3"
+datastore = "1.1.1"
+ads = "23.1.0"
+billing = "7.0.0"
+appcompat = "1.7.0"
+coreSplash = "1.0.1"
+junit = "4.13.2"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navCompose" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+androidx-core-splash = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplash" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+play-services-ads = { group = "com.google.android.gms", name = "play-services-ads", version.ref = "ads" }
+billing-ktx = { group = "com.android.billingclient", name = "billing-ktx", version.ref = "billing" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
