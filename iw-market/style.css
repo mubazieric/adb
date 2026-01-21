@@ -1,0 +1,99 @@
+/*
+Theme Name: IW Market
+Theme URI: https://shoponline.ug
+Author: IWAT Digital
+Author URI: https://shoponline.ug
+Description: Premium marketplace WooCommerce theme with a modern, performance-focused experience.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.5
+Requires PHP: 8.0
+Text Domain: iw-market
+Tags: e-commerce, custom-background, custom-logo, custom-menu, featured-images, block-styles, wide-blocks, rtl-language-support
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+:root {
+  --iw-color-primary: #1b5ef5;
+  --iw-color-accent: #ff6a00;
+  --iw-color-bg: #f7f8fb;
+  --iw-color-text: #1f2937;
+  --iw-radius: 10px;
+  --iw-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+body {
+  color: var(--iw-color-text);
+  background-color: var(--iw-color-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.iw-site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.iw-header {
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.05);
+  position: relative;
+  z-index: 20;
+}
+
+.iw-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 24px;
+}
+
+.iw-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.iw-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--iw-color-primary);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: var(--iw-radius);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.iw-card {
+  background: #fff;
+  border-radius: var(--iw-radius);
+  box-shadow: var(--iw-shadow);
+}
+
+.iw-mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 14px;
+  background: #fff;
+  box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.08);
+  z-index: 50;
+}
+
+.iw-mobile-nav a {
+  text-decoration: none;
+  color: var(--iw-color-text);
+  font-size: 12px;
+}
+
+@media (min-width: 900px) {
+  .iw-mobile-nav {
+    display: none;
+  }
+}
