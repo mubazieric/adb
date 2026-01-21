@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "IW Blue", "slug": "iw-blue", "color": "#1b5ef5" },
+        { "name": "IW Orange", "slug": "iw-orange", "color": "#ff6a00" },
+        { "name": "IW Charcoal", "slug": "iw-charcoal", "color": "#1f2937" },
+        { "name": "IW Cloud", "slug": "iw-cloud", "color": "#f7f8fb" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        { "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", "name": "System", "slug": "system" }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "rem", "%"]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#f7f8fb",
+      "text": "#1f2937"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system)"
+    }
+  }
+}
